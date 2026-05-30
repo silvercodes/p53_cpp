@@ -62,97 +62,148 @@
 //}
 
 
-// ---- Целочисленные типы ----
-
-int main()
-{
-	//signed char a{ 'x' };		// 1 byte		[-127; 128]
-	//// >>> EQUALS <<<
-	//char b{ 'x' };
-	//unsigned char c{ 'x' };		// 1 byte		[0; 255]
-	//char d{ 99 };
-
-	//short e{ 100 };				// 2 byte		[-32768; 32767]
-
-	//unsigned short f{ 100 };	// 2 byte		[0; 65535]
-
-	//int g{ 100 };				// 4 byte		[-2147483647; 2147483646]
-
-	//unsigned int h{ 100 };		// 4 byte		[0; 4294967295]
-
-	////--- переполнение типа
-	//unsigned int xxx{ 4294967295 };
-	//std::cout << xxx << '\n';
-	//xxx = xxx + 1;
-	//std::cout << xxx << '\n';
-	////---
-
-	//long i{ 100 };						// 8 byte
-
-	//unsigned long j{ 100 };				// 8 byte
-
-	//long long k{ 100 };					// 16 byte
-
-	//unsigned long long k{ 100 };		// 16 byte
-
-
-
-
-	//unsigned int a{ 1000U };
-	//std::cout << a << '\n';
-
-	// U - unsigned int
-	// L - long
-	// UL - unsigned long
-	// LL - long long
-	// ULL - unsigned long long
-
-
-	//int a{ 0x1A };				// 26
-	//std::cout << a << '\n';
-
-	//int b{ 0xFF };				// 255
-
-	//int c{ 0xFFFF };
-
-	//int d{ 035 };				// 29
-	//std::cout << d << '\n';
-
-	//int e{ 0b00000101 };
-	//std::cout << e;
-
-
-
-	
+//// ---- Целочисленные типы ----
+//
+//int main()
+//{
+//	//signed char a{ 'x' };		// 1 byte		[-127; 128]
+//	//// >>> EQUALS <<<
+//	//char b{ 'x' };
+//	//unsigned char c{ 'x' };		// 1 byte		[0; 255]
+//	//char d{ 99 };
+//
+//	//short e{ 100 };				// 2 byte		[-32768; 32767]
+//
+//	//unsigned short f{ 100 };	// 2 byte		[0; 65535]
+//
+//	//int g{ 100 };				// 4 byte		[-2147483647; 2147483646]
+//
+//	//unsigned int h{ 100 };		// 4 byte		[0; 4294967295]
+//
+//	////--- переполнение типа
+//	//unsigned int xxx{ 4294967295 };
+//	//std::cout << xxx << '\n';
+//	//xxx = xxx + 1;
+//	//std::cout << xxx << '\n';
+//	////---
+//
+//	//long i{ 100 };						// 8 byte
+//
+//	//unsigned long j{ 100 };				// 8 byte
+//
+//	//long long k{ 100 };					// 16 byte
+//
+//	//unsigned long long k{ 100 };		// 16 byte
+//
+//
+//
+//
+//	//unsigned int a{ 1000U };
+//	//std::cout << a << '\n';
+//
+//	// U - unsigned int
+//	// L - long
+//	// UL - unsigned long
+//	// LL - long long
+//	// ULL - unsigned long long
+//
+//
+//	//int a{ 0x1A };				// 26
+//	//std::cout << a << '\n';
+//
+//	//int b{ 0xFF };				// 255
+//
+//	//int c{ 0xFFFF };
+//
+//	//int d{ 035 };				// 29
+//	//std::cout << d << '\n';
+//
+//	//int e{ 0b00000101 };
+//	//std::cout << e;
+//
+//}
 
 
 
-}
+// ---- Вещественные типы ----
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//int main()
+//{
+//	float a{ 23.45 };				// 4 bytes (Число с одинарной точностью)
+//	double b{ 12.87654 };			// 8 bytes (Число с двойной точностью точностью)
+//
+//	std::cout << &a;
+//
+//	return 0;
+//}
 
 
 #pragma endregion
 
 
+#pragma region const
+
+//int main()
+//{
+//	const int a{ 45 };
+//
+//	std::cout << a;
+//	std::cout << a;
+//	std::cout << a;
+//	std::cout << a;
+//	std::cout << a;
+//
+//	return 0;
+//}
+
+#pragma endregion
+
+
+#pragma region input/output
+
+//int main()
+//{
+//	std::cout << 12 << 45;
+//
+//	return 0;
+//}
+
+#pragma endregion
+
+
+#pragma region Practice
+
+//int main()
+//{
+//	int a{};
+//	int b{};
+//
+//	std::cout << "Enter your first number: ";
+//	std::cin >> a;
+//	std::cout << "Enter your second number: ";
+//	std::cin >> b;
+//
+//	std::cout << "Result = " << a + b << '\n';
+//
+//	return 0;
+//}
 
 
 
 
+//
+//int main()
+//{
+//	int a{};
+//	int b{};
+//
+//	std::cout << "Enter your numbers: ";
+//	std::cin >> a;
+//	std::cin >> b;
+//
+//	std::cout << "Result = " << a + b << '\n';
+//
+//	return 0;
+//}
 
-
-
-
+#pragma endregion
