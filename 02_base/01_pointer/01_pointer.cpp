@@ -133,38 +133,157 @@
 
 
 
+//int main()
+//{
+//	srand(time(0));
+//
+//	/*int a = 56;
+//
+//	int* ptr = new int{ 14 };
+//	int* arr = new int[5] {};
+//
+//	delete ptr;
+//	ptr = new int{ 100 };
+//
+//	delete[] arr;
+//	arr = new int[10] {};*/
+//
+//
+//	/*int size{ 5 };
+//	int* arr = new int[size] {};
+//	
+//	for (int i{ 0 }; i < size; ++i)
+//	{
+//		*(arr + i) = rand();
+//	}
+//
+//	for (int i{ 0 }; i < size; ++i)
+//	{
+//		std::cout << *(arr + i) << ' ';
+//	}*/
+//
+//
+//	/*int* ptr = new int{ 12 };
+//	std::cout << ptr << '\n';
+//
+//	std::cout << *(ptr + 1) << '\n';
+//	std::cout << *(ptr + 2) << '\n';
+//	std::cout << *(ptr + 3) << '\n';
+//	std::cout << *(ptr + 3000) << '\n';*/
+//
+//
+//	/*int* ptr = new int{ 12 };
+//	std::cout << ptr << '\n';
+//
+//	delete ptr;
+//	std::cout << *ptr << '\n';*/
+//	
+//
+//
+//	//int* arr = new int[10] {0};
+//	//std::cout << arr << '\n';
+//
+//	//delete arr;
+//
+//	//arr[1] = 100;
+//	//std::cout << *(arr + 1) << '\n';
+//
+//	return 0;
+//}
+
+
+
+//int main()
+//{
+//	/*std::cout << "Enter a positive integer: ";
+//	int len{};
+//	std::cin >> len;
+//
+//	int* arr = new int[len];*/
+//
+//
+//	int* arr1 = new int[10] { 2, 3, 4, 5, 2, 3, 4, 5, 7, 8 };
+//	int* arr2 = new int[] { 2, 3, 4, 5, 2, 3, 4, 5, 7, 8 };
+//	
+//	return 0;
+//}
+
+
+
+// ================== const ======================
+//int main()
+//{
+//	// const int a{ 4 };
+//
+//
+//	// ------ Указатель на константное значение ------
+//	//int val{ 3 };
+//
+//	//int* ptr2 = &val;
+//	//*ptr2 = 45;
+//
+//	//val = 56;
+//
+//	//const int* ptr1 = &val;
+//	////*ptr1 = 45;					// ERROR
+//	
+//	// ------ Константный указатель ------
+//	//int val{ 3 };
+//	//int a{ 13 };
+//
+//	//val = 45;
+//
+//	//int* ptr1 = &val;
+//	//*ptr1 = 67;
+//
+//	//int* const ptr2 = &val;
+//	//*ptr2 = 99;
+//	//ptr2 = &a;			// ERROR
+//
+// 
+//	// ------ Константный указатель на константное значение ------
+//	/*int val{ 3 };
+//	int a{ 13 };
+//
+//	const int* const ptr = &val;
+//
+//	return 0;*/
+//}
+
+
 int main()
 {
-	srand(time(0));
+	int val{ 7 };
 
-	/*int a = 56;
+	// int* const ptr;			// ERROR
 
-	int* ptr = new int{ 14 };
-	int* arr = new int[5] {};
+	// int& ref = val;		// int* const ref = &val;
 
-	delete ptr;
-	ptr = new int{ 100 };
-
-	delete[] arr;
-	arr = new int[10] {};*/
+	// int& ref1;			// ERROR
 
 
-	int size{ 5 };
-	int* arr = new int[size] {};
+	// ------ ссылка на неконстантное значение (Константный указатель) ------
+	//int val{ 12 };
+	//int a{ 34 };
+
+	//int& ref{ val };	// int* const ref {&val};
+	//val = 34;			// val = 34
+	//ref = 45;			// *ref = 45
+	//ref = a;			// *ref = 34
+
 	
-	for (int i{ 0 }; i < size; ++i)
-	{
-		*(arr + i) = rand();
-	}
+	// ------ ссылка на константное значение (Константный указатель на константное значение) ------
+	// ------ часто их называют константными ссылками :-((( -----
+	int val{ 12 };
+	int a{ 34 };
 
-	for (int i{ 0 }; i < size; ++i)
-	{
-		std::cout << *(arr + i) << ' ';
-	}
-
-
-
-
+	const int& ref1 = val;	// const int* const ref1 = &val
+	// ref1 = 45;				// ERROR  *ref1 = 45
 
 	return 0;
 }
+
+
+
+
+
