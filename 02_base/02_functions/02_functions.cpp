@@ -352,45 +352,61 @@
 //}
 
 
-using predicate = bool (*)(int);
+//using predicate = bool (*)(int);
+//
+//bool isPositive(int val)
+//{
+//	return val > 0;
+//}
+//
+//bool isOdd(int val)
+//{
+//	return val % 2 == 0;
+//}
+//
+//bool isNegative(int val)
+//{
+//	return val <= 0;
+//}
+//
+//
+//int aggregate(int* arr, int count, predicate pr)
+//{
+//	int result{};
+//
+//	for (int i{}; i < count; ++i)
+//	{
+//		if (pr(arr[i]))
+//			result += arr[i];
+//	}
+//
+//	return result;
+//}
+//
+//
+//int main()
+//{
+//	int* arr = new int[5] {2, 4, 7, -1, 2};
+//
+//	std::cout << aggregate(arr, 5, isPositive) << '\n';
+//	std::cout << aggregate(arr, 5, isOdd) << '\n';
+//	std::cout << aggregate(arr, 5, isNegative) << '\n';
+//}
 
-bool isPositive(int val)
-{
-	return val > 0;
-}
-
-bool isOdd(int val)
-{
-	return val % 2 == 0;
-}
-
-bool isNegative(int val)
-{
-	return val <= 0;
-}
 
 
-int aggregate(int* arr, int count, predicate pr)
-{
-	int result{};
 
-	for (int i{}; i < count; ++i)
-	{
-		if (pr(arr[i]))
-			result += arr[i];
-	}
 
-	return result;
-}
 
 
 int main()
 {
-	int* arr = new int[5] {2, 4, 7, -1, 2};
+	int a{ 5 };
 
-	std::cout << aggregate(arr, 5, isPositive) << '\n';
-	std::cout << aggregate(arr, 5, isOdd) << '\n';
-	std::cout << aggregate(arr, 5, isNegative) << '\n';
+	bool (*ptr)(int, int) = [](int x, int y)->bool
+	{
+		return x > y;
+	};
+
+	return;
 }
-
-
